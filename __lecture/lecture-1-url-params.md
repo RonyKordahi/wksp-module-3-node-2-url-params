@@ -25,7 +25,10 @@ app.get('/question10', q10)
 </div><div>
 
 ```js
-// ...
+// ... req is an object, inside it is another object called params. settung :<word> after the last slash sets that <word> as the key to the params. The value is whatever the user requests (puts after the slash)
+app.get("question/:number", (req, res) => {
+    const number = req.params.number;
+})
 
 ```
 

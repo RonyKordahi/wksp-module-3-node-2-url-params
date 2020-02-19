@@ -1,0 +1,12 @@
+<%- include('../partials/header.ejs') %>
+
+<% let bookID = id - 101; %>
+<div class="book">
+    <p class="bookInfo">Title: <%- books[bookID].title %></p>
+    <p class="bookInfo">Author: <%- books[bookID].author %></p>
+    <p class="bookInfo">Genre: <%- books[bookID].type %></p>
+    <p class="bookInfo">Description: <%- books[bookID].description %></p>
+    <img src=<%- books[bookID].imgUrl %> alt="cover" class="bookCover">
+</div>
+
+<%- include('../partials/footer.ejs') %>

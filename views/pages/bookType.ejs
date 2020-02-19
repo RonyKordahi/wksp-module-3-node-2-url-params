@@ -1,0 +1,28 @@
+<%- include('../partials/header.ejs') %>
+
+<% let typeArr = []; %>
+
+<% books.forEach(book => { %>
+    <% if(book.type === type) { %> 
+        <% typeArr.push(book); %>
+    <% } %>
+<% }) %>
+
+<% typeArr.forEach(book => { %>
+    <div class="bookType">
+        <div>
+            <p>
+                Title: <%- book.title %> 
+            </p>
+            <p>
+                Author: <%- book.author %>
+            </p>
+        </div>
+        <div>
+            <img src=<%- book.imgUrl %> alt="cover">
+        </div>
+        <hr>
+    </div>
+<% }) %>
+
+<%- include('../partials/footer.ejs') %>

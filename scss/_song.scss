@@ -1,0 +1,32 @@
+li {
+    display: flex;
+    align-items: center;
+}
+
+.first .second {
+    display: flex;
+    flex-direction: column;
+}
+
+.ranking {
+    display: flex;
+    font-weight: bold;
+    font-size: 2em;
+    justify-content: center;
+}
+
+.streams {
+    font-size: 0.7em;
+}
+
+.song {
+    font-weight: bold;
+}
+
+.artist {
+    font-style: oblique;
+}
+
+.date {
+    font-size: 0.8em;
+}

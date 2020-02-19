@@ -1,0 +1,16 @@
+<%- include('../partials/header.ejs') %>
+
+<% const realNumber = number - 1; %>
+
+<div class="box">
+    <div class="box-top">
+        <p class="box-title"><%- allSongs[realNumber].title %></p>
+        <hr class="box-line">
+        <p class="box-artist"><%- allSongs[realNumber].artist %></p>
+    </div>
+    <div class="box-bot">
+        <p class="box-stream"><%- allSongs[realNumber].streams %></p>
+    </div>
+</div>
+
+<%- include('../partials/footer.ejs') %>

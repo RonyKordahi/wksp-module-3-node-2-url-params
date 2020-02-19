@@ -83,6 +83,64 @@ codeblock {
   margin: 12px 32px 6px 0;
   padding: 12px 14px; }
 
+li {
+  display: flex;
+  align-items: center; }
+
+.first .second {
+  display: flex;
+  flex-direction: column; }
+
+.ranking {
+  display: flex;
+  font-weight: bold;
+  font-size: 2em;
+  justify-content: center; }
+
+.streams {
+  font-size: 0.7em; }
+
+.song {
+  font-weight: bold; }
+
+.artist {
+  font-style: oblique; }
+
+.date {
+  font-size: 0.8em; }
+
+.box {
+  margin-top: 100px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  box-shadow: 0px 0px 5px 5px lightgray; }
+
+.box-title {
+  font-weight: bold;
+  text-align: center; }
+
+.box-line {
+  border: 1px solid black; }
+
+.box-artist {
+  text-align: center; }
+
+.box-stream {
+  text-align: center;
+  color: lightgray;
+  font-size: 10em; }
+
+.book {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rosybrown; }
+
+.bookInfo {
+  margin: 5px 10px; }
+
 body {
   background: #fafafa;
   display: flex;
@@ -131,3 +189,18 @@ header {
     flex-direction: row;
     justify-content: space-between;
     min-height: 500px; } }
+
+    .book {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background-color: rosybrown;
+  }
+  
+  .bookInfo {
+      margin: 5px 10px;
+  }
+  
+  .bookType {
+    text-align: center;
+  }

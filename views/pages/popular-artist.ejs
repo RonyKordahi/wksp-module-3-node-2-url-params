@@ -1,0 +1,39 @@
+<!-- 1.5 -->
+
+<%- include('../partials/header.ejs') %>
+
+<% let counter = 0 %>
+<% let topCounter = 0 %>
+<% let popArtist = [] %>
+
+<% topArtist.forEach(artist => { %>
+    <% counter = 0; %>
+    
+    <% topArtist.forEach(name => { %>
+        
+        <% if (artist.artist === name.artist) { %>
+            <% ++counter; %>
+        <% } %>
+    <% }) %>
+    <% artist.counter = counter; %>
+<% }) %>
+
+<% topCounter = topArtist[0].counter; %>
+
+<% for (let i = 0; i < topArtist.length - 1; i++) { %>
+
+    <% if (topCounter < topArtist[i + 1].counter) { %>
+        <% topCounter = topArtist[i + 1].counter; %>
+    <% } %>
+<% } %>
+
+<% topArtist.forEach((artist, index) => { %>
+    
+    <% if(artist.counter === topCounter) { %>
+        <% popArtist.push(topArtist[index]); %>
+    <% } %>
+<% }) %>
+
+<%- include("../partials/song.ejs", {topSongs: popArtist}) %>
+
+<%- include('../partials/footer.ejs') %>
