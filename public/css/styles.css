@@ -85,7 +85,8 @@ codeblock {
 
 li {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  justify-content: space-between; }
 
 .first .second {
   display: flex;
@@ -95,19 +96,23 @@ li {
   display: flex;
   font-weight: bold;
   font-size: 2em;
-  justify-content: center; }
+  justify-content: center;
+  padding-top: 10px; }
 
 .streams {
   font-size: 0.7em; }
 
 .song {
-  font-weight: bold; }
+  font-weight: bold;
+  text-align: center; }
 
 .artist {
-  font-style: oblique; }
+  font-style: oblique;
+  text-align: center; }
 
 .date {
-  font-size: 0.8em; }
+  font-size: 0.8em;
+  padding-top: 30px; }
 
 .box {
   margin-top: 100px;
@@ -189,18 +194,3 @@ header {
     flex-direction: row;
     justify-content: space-between;
     min-height: 500px; } }
-
-    .book {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      background-color: rosybrown;
-  }
-  
-  .bookInfo {
-      margin: 5px 10px;
-  }
-  
-  .bookType {
-    text-align: center;
-  }
