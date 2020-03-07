@@ -1,0 +1,11 @@
+<!-- 1.3 -->
+<!-- 1.4 add divs to style -->
+<ul>
+    <% topSongs.forEach(function(song) { %>
+        <li><div class="first"><div class="ranking">#<%- song.rank %></div> <div class="streams">(<%- song.streams %> streams)</div></div> 
+            <div class="second"><div class="song"><%- song.title %></div> <div class="artist"><%- song.artist %></div></div> 
+            <div class="date">publication date: <%- song.publicationDate %></div>
+        </li>
+        <hr>
+        <% }); %>
+</ul>

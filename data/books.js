@@ -2,12 +2,12 @@
 
 const books = [
     {
-       id: 101,
-       type: 'fiction',
-       imgUrl: 'http://prodimage.images-bn.com/pimages/9780446310789.jpg',
-       title: 'To Kill a Mockingbird',
-       author: 'Harper Lee',
-       description: 'Harper Lee’s classic is one those rare perfect novels, which by itself makes it a should read. It’s further elevated by the evergreen nature of its central conflicts and plot; nearly six decades after publication, the story of a small southern town’s struggle with racism and injustice remains disturbingly current. It’s also become a must read because it’s widely the quintessential 20th-century American novel.'
+        id: 101,
+        type: 'fiction',
+        imgUrl: 'http://prodimage.images-bn.com/pimages/9780446310789.jpg',
+        title: 'To Kill a Mockingbird',
+        author: 'Harper Lee',
+        description: 'Harper Lee’s classic is one those rare perfect novels, which by itself makes it a should read. It’s further elevated by the evergreen nature of its central conflicts and plot; nearly six decades after publication, the story of a small southern town’s struggle with racism and injustice remains disturbingly current. It’s also become a must read because it’s widely the quintessential 20th-century American novel.'
     },
     {
         id: 102,
@@ -92,7 +92,7 @@ const books = [
     {
         id: 112,
         type: 'fiction',
-        imgUrl: 'http://prodimage.images-bn.com/pimages/9780446310789.jpg',
+        imgUrl: 'https://prodimage.images-bn.com/pimages/2940014012805_p0_v2_s550x406.jpg',
         title: 'Ulysses',
         author: 'James Joyce',
         description: 'Another one of those incredibly long books that’s simply challenging to read. Many people avoid this one, especially once they find out its plot is basically  about a bunch of people wandering around Dublin in 1904 and thinking things. But if you want to really understand modernism (and postmodernism, come to think of it), you must read Ulysses. Any time a book plays with point-of-view, literary allusions, and stream-of-consciousness, there’s a line going back directly to this incredibly novel.'

@@ -7,8 +7,8 @@
 - What's the difference between these two?
 
 ```js
-<%- myVar %>
-<%= myVar %>
+<%- myVar %> //implements HTML
+<%= myVar %> //as if it does .toString
 ```
 
 _...Why do we have two options?_
@@ -32,9 +32,9 @@ What notation do we use to run JS snippets inside of an `.ejs` file?
 ```js
 // Example
 <ul>
-    array.forEach(element => {
-        <li>element</li>
-    });
+    <% array.forEach(element => { %>
+        <li><%= element %></li>
+    <% >}); %>
 </ul>
 ```
 
@@ -48,7 +48,16 @@ What notation do we use to run JS snippets inside of an `.ejs` file?
 
 ```js
 // Example
+app.get(path, function(request, response) {});
+--------------------------------------------------
+//creating the server
+const express = require('express');
+const app = exress();
+app.get("/hello", function(request, response) {
+    response.send("hello");
+});
 
+app.listen(8000), console.log("Server is up! Port 8000");
 ```
 
 ---

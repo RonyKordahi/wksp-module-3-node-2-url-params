@@ -1,0 +1,37 @@
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.first .second {
+    display: flex;
+    flex-direction: column;
+}
+
+.ranking {
+    display: flex;
+    font-weight: bold;
+    font-size: 2em;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.streams {
+    font-size: 0.7em;
+}
+
+.song {
+    font-weight: bold;
+    text-align: center;
+}
+
+.artist {
+    font-style: oblique;
+    text-align: center;
+}
+
+.date {
+    font-size: 0.8em;
+    padding-top: 30px;
+}
